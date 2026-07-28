@@ -65,7 +65,7 @@ body {
 .button.button-white:hover {
     background: rgb(241 241 241);
 }
--
+
 .main-field {
     display: flex;
     align-items: center;
@@ -78,6 +78,18 @@ body {
     position: relative;
     box-sizing: border-box;
     height: 50px;
+}
+
+.main-field:has(.ng-invalid.ng-touched) {
+    border-color: red;
+}
+
+.input-error {
+    margin-top: 1px;
+    display: block;
+    margin-bottom: 10px;
+    font-size: 12px;
+    color: red;
 }
 
 .main-field.textarea {
