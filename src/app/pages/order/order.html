@@ -28,6 +28,10 @@
                         placeholder="Куда: начните вводить адрес" autocomplete="off" />
                     <div class="main-ac" id="toAc" role="listbox" aria-label="Подсказки адресов"></div>
                 </div>
+                @if (this.routeForm.get('to')?.invalid && (this.routeForm.get('to')?.dirty ||
+                this.routeForm.get('to')?.touched)) {
+                <label for="from" class="input-error">Заполните поле Куда</label>
+                }
             </div>
         </div>
         <div class="main-package" [style.display]="orderId() ? 'none' : null">

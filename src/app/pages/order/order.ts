@@ -158,9 +158,6 @@ export class Order {
 
       this.orderId.set(response.id);
     });
-    
-    console.log(payload);
-    this.orderId.set(1);
   }
 
 }
